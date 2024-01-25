@@ -1,0 +1,39 @@
+styeles.css
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff;
+}
+
+.garden {
+    text-align: center;
+}
+
+.flower {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: purple;
+    margin: 10px;
+    border-radius: 50%;
+    animation: float 5s ease-in-out infinite alternate;
+}
+
+.message {
+    font-size: 24px;
+    color: #d6336c;
+    margin-top: 20px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
